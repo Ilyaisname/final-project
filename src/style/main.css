@@ -1,0 +1,61 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(16 * (100vw / 1920));
+}
+
+.container-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%; 
+}
+ 
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%; 
+  /* deleted befor create block */
+  height: 720px;
+  /* --- */
+  padding: 0 55px;
+  /* padding-right: 16.66%;
+  padding-left: 16.66%; */
+} 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.col {
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: calc(100% - 20px);
+  margin: 0 10px;
+}
+
+.col-1 {max-width: calc(100% / 12 * 1 - 20px);}
+
+.col-2 {max-width: calc(100% / 12 * 2 - 20px);}
+
+.col-3 {max-width: calc(100% / 12 * 3 - 20px);}
+
+.col-4 {max-width: calc(100% / 12 * 4 - 20px);}
+
+.col-5 {max-width: calc(100% / 12 * 5 - 20px);}
+
+.col-6 {max-width: calc(100% / 12 * 6 - 20px);}
+
+.col-7 {max-width: calc(100% / 12 * 7 - 20px);}
+
+.col-8 {max-width: calc(100% / 12 * 8 - 20px);}
+
+.col-9 {max-width: calc(100% / 12 * 9 - 20px);}
+
+.col-10 {max-width: calc(100% / 12 * 10 - 20px);}
+
+.col-11 {max-width: calc(100% / 12 * 11 - 20px);}
+
+.col-12 {max-width: calc(100% / 12 * 12 - 20px);}
