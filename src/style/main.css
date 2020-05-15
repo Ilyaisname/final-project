@@ -1,27 +1,43 @@
+html {
+  /* font-size: 16px; */
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: calc(16 * (100vw / 1920));
+  font-size: calc(12px + 4 * (100vw / 1920));
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px)/1920));
+  }
 }
 
 .container-wrap {
   position: relative;
   margin: 0 auto;
-  max-width: 1920px;
   width: 100%; 
+  box-sizing: border-box;
+  overflow: hidden;
 }
+
  
 .container {
   position: relative;
   margin: 0 auto;
   max-width: 1280px;
   width: 100%; 
-  /* deleted befor create block */
+  /* deletion after block creation */
   height: 720px;
   /* --- */
-  padding: 0 55px;
-  /* padding-right: 16.66%;
-  padding-left: 16.66%; */
+  padding: 0 2.8645833vw;
 } 
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: none;
+  }
+}
 
 .row {
   display: flex;
@@ -59,3 +75,55 @@ body {
 .col-11 {max-width: calc(100% / 12 * 11 - 20px);}
 
 .col-12 {max-width: calc(100% / 12 * 12 - 20px);}
+
+@media screen and (min-width: 768px) {
+  .col-md-1 {max-width: calc(100% / 12 * 1 - 20px);}
+
+  .col-md-2 {max-width: calc(100% / 12 * 2 - 20px);}
+
+  .col-md-3 {max-width: calc(100% / 12 * 3 - 20px);}
+
+  .col-md-4 {max-width: calc(100% / 12 * 4 - 20px);}
+
+  .col-md-5 {max-width: calc(100% / 12 * 5 - 20px);}
+
+  .col-md-6 {max-width: calc(100% / 12 * 6 - 20px);}
+
+  .col-md-7 {max-width: calc(100% / 12 * 7 - 20px);}
+
+  .col-md-8 {max-width: calc(100% / 12 * 8 - 20px);}
+
+  .col-md-9 {max-width: calc(100% / 12 * 9 - 20px);}
+
+  .col-md-10 {max-width: calc(100% / 12 * 10 - 20px);}
+
+  .col-md-11 {max-width: calc(100% / 12 * 11 - 20px);}
+
+  .col-md-12 {max-width: calc(100% / 12 * 12 - 20px);}
+}
+
+@media screen and (min-width: 1100px) {
+  .col-lg-1 {max-width: calc(100% / 12 * 1 - 20px);}
+
+  .col-lg-2 {max-width: calc(100% / 12 * 2 - 20px);}
+
+  .col-lg-3 {max-width: calc(100% / 12 * 3 - 20px);}
+
+  .col-lg-4 {max-width: calc(100% / 12 * 4 - 20px);}
+
+  .col-lg-5 {max-width: calc(100% / 12 * 5 - 20px);}
+
+  .col-lg-6 {max-width: calc(100% / 12 * 6 - 20px);}
+
+  .col-lg-7 {max-width: calc(100% / 12 * 7 - 20px);}
+
+  .col-lg-8 {max-width: calc(100% / 12 * 8 - 20px);}
+
+  .col-lg-9 {max-width: calc(100% / 12 * 9 - 20px);}
+
+  .col-lg-10 {max-width: calc(100% / 12 * 10 - 20px);}
+
+  .col-lg-11 {max-width: calc(100% / 12 * 11 - 20px);}
+
+  .col-lg-12 {max-width: calc(100% / 12 * 12 - 20px);}
+}

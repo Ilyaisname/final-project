@@ -1,3 +1,5 @@
+/* block fon */
+
 .fon-orange {
   background: linear-gradient(0deg, #651FFF -1.81%, #FF5900 33.5%, rgba(253, 191, 15, 0.3) 84.16%, #FFFFFF 145.56%), #FDBF0F;
 }
@@ -10,24 +12,79 @@
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
+.rings {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mishen {
+  position: absolute;
+  top: 52px;
+  right: -152px;
+  z-index: 2;
+  opacity: 90%;
+}
+
+.girls {
+  position: absolute;
+  z-index: 2;
+  right: 218px;
+  bottom: 0;
+}
+
+.girls img,
+.mishen img,
+.rings img {
+  max-width: 100%;
+}
+
+/* ---------------- */
+
+/* header */
 .header {
   position: relative;
   padding-top: 14px;
+  z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 0;
+  }
+}
+
+.header__burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__burger {
+    display: block;
+  }
+}
 
 .header__logo {
-  font-family: 'Roboto Condensed', sans-serif;;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
-  font-size: calc(48 * (100vw / 1920));
-  line-height: 56px;
+  font-size: calc(18px + 18 * (100vw / 1920));
+  line-height: 42px;
   text-transform: uppercase;
 }
 
-.header__wrap {
+@media (max-width: 768px) {
+  .header__logo {
+    font-size: calc(18px + (18 + 18 * 0.7) * ((100vw - 320px) / 1920));
+  }
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .links {
@@ -40,10 +97,183 @@
   color: #000000;
 }
 
+.header__navigation {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
+}
+
 .header__navigation-menu {
   list-style-type: none;
   display: flex;
   padding-top: 6px;
-  padding-left: 34px;
+  padding-left: 6.97vw;
   justify-content: space-between;
+}
+
+.header__contacts {
+  position: relative;
+  padding-top: 2.75rem;
+}
+
+.header__contacts-address {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__contacts-phone {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__contacts-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #000000;
+  box-shadow: 0px 16px 32px rgba(69, 90, 100, 0.4);
+  border-radius: 6px;
+  padding: 10px 17px;
+  position: relative;
+}
+
+.button::after {
+  left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+  /* background: #000000;
+  border-radius: 6px; */
+}
+
+.button::after {
+  border-color: rgba(0, 0, 0, 0);
+	border-left-color: #000000;
+  border-width: 26px 17px;
+  border-radius: 50%;
+  margin-top: -25px;
+  margin-left: -6px;
+}
+
+/* .button::before  {
+  border-color: rgba(0, 0, 0, 0);
+	border-left-color: #000000;
+	border-width: 91px;
+	margin-top: -91px;
+} */
+
+
+.address__wrap {
+  margin-right: -142px;
+  width: 13.5rem;
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  margin: 0 10px;
+}
+
+.address__wrap:last-child {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.phone-wrap {
+  margin-right: -46px;
+  width: 14.375rem;
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.phone-wrap__phone a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.phone-wrap__mail a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.button-wrap {
+  width: 10.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* ----------------- */
+
+/* content */
+.ali-logo {
+  z-index: 3;
+  position: relative;
+  padding-top: 92px;
+}
+
+.ali-logo__before {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 63px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: right;
+  padding-right: 8.24%;
+  margin-bottom: -0.870rem;
+  /* padding-left: 33%;*/
+}
+
+.ali-logo__logo img {
+  max-width: 100%;
+}
+
+.ali-logo__text {
+  font-family: 'Roboto Condensed',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  padding-top: 26px;
+}
+
+.button-size-md {
+  width: 256px;
+  height: 60px;
+}
+
+.ali-logo__button {
+  padding-top: 24px;
 }
