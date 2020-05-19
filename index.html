@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="src/style/normalize.css">
   <link rel="stylesheet" href="src/style/main.css">
   <link rel="stylesheet" href="src/style/first-block.css">
+  <link rel="stylesheet" href="src/style/second-block.css">
+  <link rel="stylesheet" href="src/style/third-block.css">
   <title>Проводник</title>
 </head>
 <body>
-  <div class="container-wrap fon-orange">
+  <div id="first-block" class="container-wrap fon-orange">
     
-    <div id="first-block" class="first-block container ">
+    <div class="container">
       <div class="first-block-fon">
         <div class="rings"><img src="images/rings.png" alt="rings"></div>
         <div class="mishen"><img src="images/mishen_red.png" alt="mishen_red"></div>
@@ -79,11 +80,126 @@
 
   </div>
   
-  <div class="container-wrap">
-    <div id="second-block" class="container">
-      
+  <div id="second-block">
+    <!-- top part -->
+    <div class="container container-wrap fon-white">
+      <div class="row card ">
+        <div class="col col-12">
+          <div class="row card-wrap">
+            
+          <section class="card__left col col-12 col-md-6">
+            <div class="card__left-pic"><img src="images/pic-second-block.png" alt="pictures"></div>
+            <div class="card__left-text">
+              <span>
+              Вы тратите много сил и денег на маркетинг и рекламу своих товаров. Самые эффективные из каналов — дорогие и требуют большой работы.
+              </span>
+            </div>
+          </section>
+
+          <section class="card__right col col-12 col-md-5">
+            <span class="card__right-header">Точнее, их два.</span>
+            <div class="card__right-item">
+              <div class="item__decor">
+              </div>
+              <div class="item__text">
+                Сотрудничать с существующим магазином на AliExpress и избавить себя от забот вроде вопросов колл-центра, хранения и доставки. И опять же – не тратиться на маркетинг.   
+              </div>
+            </div>
+            <div class="card__right-item">
+              <div class="item__decor two"></div>
+              <div class="item__text">Cоздать магазин на маркетплейсе AliExpress и реализовывать товары покупателям со всего мира. Один емкий и грамотный канал продаж заменит все рекламные инструменты, которыми вы пользовались до этого.</div>
+            </div>
+          </section>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom part  -->
+    <div class="container-wrap fon-purple">
+      <div class="container">
+        <div class="decor-part">
+          <div class="circles"><img src="images/circles-bl2.png" alt="circles"></div>
+          <div class="hand-phone"><img src="images/hand-bl2.png" alt="hand-phone"></div>
+        </div>
+        <section class="sentence">
+          <div class="row">
+            <div class="header-section col col-12 col-lg-5">
+              <span>Что вы получите с магазином на AliExpress?</span>
+            </div>
+          </div>
+          <div class="product-sentence row">
+            <div class="product-sentence__card col col-12 col-md-4">
+              <div class="card-wraper">
+                <span class="card__icon"></span>
+                <span class="card__text">Снизите операционные расходы и расходы на маркетинг.</span>
+              </div>
+            </div>
+            <div class="product-sentence__card col col-12 col-md-4">
+              <div class="card-wraper">
+                <span class="card__icon"></span>
+                <span class="card__text">Сможете реализовывать продукцию в очень больших объемах.</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-sentence end row">
+            <div class="product-sentence__card col col-12 col-md-4">
+              <div class="card-wraper">
+                <span class="card__icon"></span>
+                <span class="card__text">Трафик из очень активных покупателей из регионов.</span>
+              </div>
+            </div>
+            <div class="product-sentence__card col col-12 col-md-4">
+              <div class="card-wraper">
+                <span class="card__icon"></span>
+                <span class="card__text">В 2020 году еще увеличите продажи за счет покупателей из стран СНГ.</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-4">
+              <a href="#" class="button button-size-md but-clr-orange">Скачать предложение</a>
+            </div>
+          </div>
+        </section>
+    </div>
     </div>
   </div>
+  <div id="third-block">
+    <div class="container container-wrap">
+      <section>
+      <div class="exit-in-ali row">
+        <div class="header-section header-section__clr-black col col-9">
+          <span>Почему выходить на AliExpress самостоятельно сложно?</span>
+        </div>  
+      </div>
 
+      <div class="exit-in-ali__group row">
+        <div class="group__wrap col col-12">
+          <div class="group__left-wrap row">
+            <div class="group__left col col-6">
+              <div class="group__list-wrap row">
+                <div class="group__list col col-10">
+                  <span class="group__title"></span>
+                  <ul class="list">
+                    <li class="list__item-1"></li>
+                    <li class="list__item-2"></li>
+                    <li class="list__item-3"></li>
+                  </ul>
+                </div>
+                <div class="col col-11">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col col-6">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </div>
 </body>
 </html>
