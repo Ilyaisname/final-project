@@ -1,0 +1,134 @@
+.slider__decor {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 412px;
+  height: 478px;
+  background: url(./../../images/paket_mish-bl-5.png) center center / cover no-repeat;
+}
+
+.slider__header-mb {
+  margin-bottom: 36px;
+}
+
+.slider__slide {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid rgba(229, 229, 229, 0.6);
+  /* box-sizing: border-box; */
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(0, 0, 0, 0.14);
+  z-index: 1;
+}
+
+.slide__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+
+
+.slide__header {
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  padding-bottom: 26px;
+}
+
+.slide__text {
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding-bottom: 66px;
+}
+
+.slide__figures {
+  display: flex;
+}
+
+.figures__wrap {
+  display: flex;
+  /* width: 374px; */
+  padding-left: 35px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.figures__wrap::before {
+  content: "";
+  top: 10px;
+  left: -10px;
+  width: 34px;
+  height: 34px;
+  background: url(./../../images/Group-bl-5.png) center center no-repeat;
+  position: absolute;
+}
+
+.figures__item1 {
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+  flex: 1 1 50%;
+}
+
+.figures__item2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  flex: 1 10 30%;
+}
+
+.slide__logo img{
+  max-width: 100%;
+}
+
+.slide__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__control {
+
+}
+
+.slider__elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0;
+}
+
+.slider__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__item {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 12px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.slider__item-active {
+  background-color: #FDBF0F;
+  transform: scale(1.7);
+}
