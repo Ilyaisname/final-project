@@ -20,8 +20,7 @@
 
 .org-decor__element {
   position: absolute;
-  max-width: 402px;
-  width: 100%;
+  width: 69%;
 }
 
 .element__item {
@@ -31,7 +30,7 @@
   justify-content: space-around;
 }
 
-.element-item__revers {
+.element__item-revers {
   flex-direction: row-reverse;
 }
 
@@ -60,7 +59,6 @@
 }
 
 .element__circle {
-  padding: 20px 36px;
   background: url(./../../images/process__ball.png) center center no-repeat;
   font-family: "Roboto Condensed",sans-serif;
   font-style: normal;
@@ -71,6 +69,9 @@
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+  flex: 1 1 auto;
+  height: 62px;
+  width: 62px;
 }
 
 .element__text {
@@ -83,6 +84,6 @@
   color: #000000;
   display: flex;
   align-items: center;
-  width: 70%;
+  flex: 1 10 65%;
 }
 
