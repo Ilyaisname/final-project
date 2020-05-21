@@ -1,0 +1,60 @@
+.fon-purple2 {
+  background: #651FFF;
+}
+
+.start__content {
+  justify-content: space-between;
+}
+
+.start__element {
+  display: flex;
+}
+
+.element__text-white {
+  color: #FEFEFE;
+  position: relative;
+}
+
+/* .margin_left {
+  padding-left: 12px;
+} */
+
+.arrow {
+  position: relative;
+}
+
+.element__circle.arrow::before {
+  content: "";
+  top: 22px;
+  right: 100px;
+  width: 54px;
+  height: 15px;
+  position: absolute;
+  background: url(./../../images/arrow-bl-6.png) center center / cover no-repeat;
+}
+
+.start__arrow-to-form {
+  background: url(./../../images/Vector-bl-6.png) center center  no-repeat;
+  width: 166px; 
+  height: 78px;
+  margin-top: 9px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .start__content:first-child() {
+    margin-top: 0px;
+  }
+
+  .start__element {
+    margin-top: 60px;
+  }
+
+  .element__circle.arrow::before {
+    transform: rotate(90deg);
+    top: -36px;
+    right: 46px;
+    width: 54px;
+    height: 15px;
+  }
+}

@@ -1,0 +1,133 @@
+/* fon */
+.fon-lamp {
+  background: url(./../../images/fon_lamp-bl-7.png) center center / cover no-repeat;
+}
+
+.form__decor {
+  width: 318px;
+  height: 313px;
+  background: url(./../../images/krug-form-bl-7.png) center center / cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.form__vector {
+  width: 100px;
+  height: 219px;
+  top: -140px;
+  left: -64px;
+  position: absolute;
+  background: url(./../../images/Vector-form-bl-7.png) center center / cover no-repeat;
+}
+
+/*  */
+
+.form__body {
+  margin-top: 116px;
+  margin-bottom: 102px;
+  justify-content: center;
+}
+
+.form__header {
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header-section_center {
+  justify-content: center;
+  display: flex;
+}
+
+.header-section_padding {
+  padding: 50px 0;
+}
+
+.form__container {
+  background: #FFFFFF;
+  position: relative;
+}
+
+.form__content {
+  position: relative;
+  justify-content: center;
+  padding-bottom: 42px;
+}
+
+.form__left {
+
+}
+
+.form__name {
+  width: 100%;
+}
+
+.form__tel{
+
+}
+
+.form__domain,
+.form__why,
+.form__name,
+.form__tel,
+.form__mail {
+  display: flex;
+  flex-direction: column; 
+}
+
+.form__why,
+.form__name,
+.form__tel {
+  padding-bottom: 26px;
+}
+
+.input-select {
+  padding-top: 3px;
+}
+
+.label-title {
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.54);
+  padding-bottom: 10px;
+}
+
+.input-text {
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.9);
+  border: none;
+  border-bottom: 1px solid #979797;
+  background: none;
+}
+
+.form__footer-wrap {
+  justify-content: center;
+}
+
+.form__footer {
+  padding-top: 34px;
+}
+
+.form__footer-text {
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.form__butn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}

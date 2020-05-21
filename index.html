@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="src/style/third-block.css">
   <link rel="stylesheet" href="src/style/fourth-block.css">
   <link rel="stylesheet" href="src/style/five-block.css">
+  <link rel="stylesheet" href="src/style/six-block.css">
+  <link rel="stylesheet" href="src/style/form-block.css">
   <title>Проводник</title>
 </head>
 <body>
@@ -357,6 +359,105 @@
               <span class="slider__item"></span>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="six-block" class="container-wrap fon-purple2">
+      <div class="start container">
+        <div class="start__header row">
+          <div class="header-section col col-12 col-lg-3">
+            <span>Как начать?</span>
+          </div>
+        </div>
+
+        <div class="start__content row">
+          <div class="start__element  col col-12 col-md-6 col-lg-2">
+            <div class="element__circle">1</div>
+            <div class="element__text margin_left element__text-white">Заполните форму.</div> 
+          </div>
+          <div class="start__element col col-12 col-md-6 col-lg-3">
+            <div class="element__circle arrow">2</div>
+            <div class="element__text margin_left element__text-white">Обсудим ваши задачи с менеджером.</div>
+          </div>
+          <div class="start__element col col-12 col-md-6 col-lg-2">
+            <div class="element__circle arrow">3</div>
+            <div class="element__text margin_left element__text-white">Сформируем пакет услуг.</div>
+            </div>
+          <div class="start__element col col-12 col-md-6 col-lg-2">
+            <div class="element__circle arrow">4</div>
+            <div class="element__text margin_left element__text-white">Заключим договор.</div>
+            </div>
+        </div>
+
+        <div class="start__vector row">
+          <div class="col col-5 col-md-3 col-lg-2">
+            <span class="start__arrow-to-form"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form-block" class="container-wrap fon-lamp">
+      <div class="form container">
+        <div class="form__body row">
+          
+          <form action="URL"  method="GET" class="form__container col col-12 col-md-12 col-lg-8">
+            <div class="form__decor"></div>
+            <div class="form__vector"></div>
+            <div class="form__header row">
+              <div class="header-section header-section__clr-black header-section_center header-section_padding col col-11">
+                <span>Пожалуйста, оставьте свои контакты</span>
+              </div>
+            </div>
+
+            <div class="form__content row">
+              <div class="form__left col col-5">
+                <!-- elements left -->
+                <div class="form__name">
+                  <label class="label-title" for="name">Имя</label> 
+                  <input class="input-text" required type="text" id="name" name="name" placeholder="Как к вам обращаться">
+                </div>
+
+                <div class="form__tel">
+                  <label class="label-title" for="tel">Телефон</label> 
+                  <input class="input-text" required type="text" id="tel" name="tel" placeholder="+7 (123) 12-12-123">
+                </div>
+
+                <div class="form__mail">
+                  <label class="label-title" for="mail">E-mail</label>
+                  <input class="input-text" required type="email" id="mail" name="mail" placeholder="Нужен для связи">
+                </div>
+              </div>
+
+              <div class="form__right col col-5">
+                <!-- elements right -->
+                <div class="form__why">
+                  <label class="label-title" for="select">Кто вы</label>
+                  <select class="input-text input-select" required type="text" id="select" name="select">
+                    <option>Выберите род деятельности</option>
+                    <option value="value1">ИП</option>
+                    <option value="value2">ООО</option>
+                    <option value="value3">ПАО</option>
+                  </select>
+                </div>
+
+                <div class="form__domain">
+                  <label class="label-title" for="domain">Домен (если есть)</label>
+                  <input class="input-text" required type="text" id="domain" name="domain" placeholder="">
+                </div>
+              </div>
+
+              <div class="form__footer col col-10">
+                <div class="form__footer-wrap row">
+                <div class="form__footer-text col col-6">
+                  Оправляя форму, вы соглашаетесь на сбор, обработку и хранение ваших данных сотрудниками компании. Политика конфиденциальности
+                </div>
+                <div class="form__butn col col-6"><button type="submit" class="button button-size-md flex-end">отправить</button></div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

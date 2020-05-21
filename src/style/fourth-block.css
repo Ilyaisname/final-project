@@ -36,6 +36,8 @@
 
 .element__text.element__text__align-right {
   text-align: right;
+  margin-left: 0;
+  margin-right: 12px;
 }
 
 .element-one {
@@ -85,5 +87,6 @@
   display: flex;
   align-items: center;
   flex: 1 10 65%;
+  margin-left: 12px;
 }
 
