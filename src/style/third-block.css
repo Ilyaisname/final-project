@@ -1,74 +1,68 @@
-.header-section__clr-black {
+.header-section_clr-black {
   color: #000000;
-}
-
-.group__list {
- 
 }
 
 .group__list-wrap {
   justify-content: flex-end;
   border-right: 2px solid;
-  padding-bottom: 92px;
+  padding-bottom: 5.75rem;
 }
 
 .group__title {
   display: inline-block;
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   text-align: center;
   color: #FFFFFF;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   background: url(./../../images/title-left_br-bl-3.png);
-  padding: 10px 30px;
-  margin-bottom: 45px;
+  padding: 0.625rem 1.875rem;
+  margin-bottom: 2.8125rem;
 }
 
-.list {
-  padding-left: 18px;
+.list__items {
+  padding-left: 1.125rem;
   list-style: none;
 }
 
 .list__item {
   position: relative;
-  padding-left: 12px;
-  margin-bottom: 18px;
-  padding-right: 116px;
-  font-family: "Roboto",sans-serif;
+  padding-left: 0.75rem;
+  margin-bottom: 1.125rem;
+  padding-right: 7.25rem;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: #000000;
 }
 
 .list__item::before {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   background: #000000;
   border-radius: 50%;
-  top: 5px;
-  left: -18px;
+  top: 0.3125rem;
+  left: -1.125rem;
 }
 
 .group__pic {
-  margin: 60px 0 0 0;
+  margin: 3.75rem 0 0 0;
   background: url(./../../images/pc-bl-3.png) center center / cover no-repeat;
-  width: 517px;
-  height: 290px;
+  width: 32.2125rem;
+  height: 18.125rem;
 }
 
 .group__pic img {
   max-width: 100%;
 }
 
-.group__title__size-md {
-  padding: 10px 24.4px;
+.group__title_size-md {
+  padding: 0.625rem 1.525rem;
   background: url(./../../images/title-right_br-bl-3.png);
 }
 
@@ -82,15 +76,14 @@
 }
 
 .content-hub__item {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   color: #000000;
   flex: 1 1 50%;
   position: relative;
-  padding: 0 40px 56px 48px;
+  padding: 0 2.5rem 3.5rem 3rem;
 
 }
 
@@ -98,56 +91,58 @@
   content: "";
   position: absolute;
   background: url(./../../images/right-items-circle.png);
-  width: 34px;
-  height: 34px;
+  width: 2.125rem;
+  height: 2.125rem;
   top: 0;
   left: 0;
 }
 
 .padding-right {
-  padding-right: 278px;
+  padding-right: 23.625rem;
 }
 
 .content-hub__text {
   position: relative;
-  padding-top: 66px;
-  padding-bottom: 124px;
+  padding-top: 4.125rem;
+  padding-bottom: 7.125rem;
 }
 
 .content-hub__text span {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   color: #000000;
-  padding-left: 122px;
-  padding-right: 66px;
+  padding-left: 7.625rem;
+  padding-right: 4.125rem;
   display: inline-block;
 }
 
 .content-hub__text::before {
   content: "";
   position: absolute;
-  width: 102px;
-  height: 89px;
+  width: 6.375rem;
+  height: 5.5625rem;
   background: url(./../../images/vverx-bl-3.png);
-  top: 60px;
+  top: 3.75rem;
   left: 0;
 }
 
 .button-size-lg {
   padding: 0.708em 3.583em 0.808em 3.583em;
-  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1.875rem;
 }
 
 .button.button-size-lg::after {
-  border-width: 1.72em 1em;
+  border-width: 1.62em .8em;
+  margin-top: -1.62em;
 }
 
-.content-hub__but {
-  margin-left: -10px;
+.content-hub__butn {
+  margin-left: -0.625rem;
 }
+
 
 /* ----bottom */
 
@@ -155,21 +150,22 @@
   background: #7224EA;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(0, 0, 0, 0.14);
   width: 100%;
-  max-width: 1210px;
-  padding: 0 20px;
+  max-width: 75.625rem;
+  padding: 0 1.25rem;
   margin: 0 auto;
 }
 
 .ali-footer__item {
-  padding-left: 100px;
+  padding-left: 6.25rem;
   position: relative;
+  margin-bottom: 4.0625rem;
 }
 
 .ali-footer__item::before {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background: url(./../../images/dom-bl-3.png) center center no-repeat;
   top: 0;
@@ -177,33 +173,98 @@
   border: 2px solid #FFFFFF;
 }
 
+.ali-footer__item.zavod_icon::before {
+  background: url(./../../images/zavodik-bl-3.png) center center no-repeat;
+}
+
 .ali-footer__header {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   display: flex;
   align-items: center;
   color: #FFFFFF;
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 
 .ali-footer__text {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   color: #FFFFFF;
 }
 
 .ali__bottom-wrap {
-  padding-bottom: 76px;
+  padding-bottom: 4.75rem;
 }
+
 
 @media screen and (max-width: 768px) {
   .ali-footer__item {
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
+    margin-bottom: 0px;
   }
+
+  .group__list-wrap {
+    justify-content: center;
+  }
+
+  .group__right-wrap {
+    justify-content: center;
+  }
+
+  .button-size-lg {
+    padding: 0.66em 0.77em 0.83em 1.05em;
+    font-size: 1.125rem;
+  }
+
+  .button.button-size-lg::after {
+    border-width: 1.72em 0.77em;
+    margin-top: -1.72em;
+  }
+
+  .button {
+    display: inline-block;
+    margin: 1.25rem
+  }
+
+  .content-hub__text {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 1.875rem;
+  }
+
+  .content-hub__text::before {
+    top: -1rem;
+  }
+
+  .ali__bottom-wrap {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ali-footer__item {
+    padding-bottom: 3.125rem;
+  }
+
+  .list__item {
+    padding-right: 0px;
+  }
+
+  .content-hub__text::before {
+    top: 20px;
+  }
+
+  .padding-right {
+    padding-right: 0px; 
+  }
+
+  .content-hub__text {
+    padding-top: 0px;
+    padding-bottom: 2.5rem;
+  }
+  
 }

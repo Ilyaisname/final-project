@@ -1,5 +1,5 @@
 .margin-block-top {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 .fon-grey {
@@ -12,9 +12,9 @@
 
 .org-decor__fon {
   width: 100%;
-  height: 586px;
+  height: 36.625rem;
   background: url(./../../images/chel_s_misheniu.png) center center no-repeat;
-  max-width: 586px;
+  max-width: 36.625rem;
   position: relative;
 }
 
@@ -37,27 +37,27 @@
 .element__text.element__text__align-right {
   text-align: right;
   margin-left: 0;
-  margin-right: 12px;
+  margin-right: 0.75rem;
 }
 
 .element-one {
-  bottom: 162px;
-  left: -284px;
+  bottom: 10.125rem;
+  left: -17.75rem;
 }
 
 .element-two {
-  top: 90px;
-  left: -280px;
+  top: 5.625rem;
+  left: -17.5rem;
 }
 
 .element-three {
-  top: -14px;
-  left: 335px;
+  top: -0.875rem;
+  left: 20.9375rem;
 }
 
 .element-four {
-  top: 212px;
-  right: -318px;
+  top: 13.25rem;
+  right: -19.875rem;
 }
 
 .element__circle {
@@ -65,28 +65,67 @@
   font-family: "Roboto Condensed",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
   flex: 1 1 auto;
-  height: 62px;
-  width: 62px;
+  height: 3.875rem;
+  width: 3.875rem;
 }
 
 .element__text {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-align: left;
   color: #000000;
   display: flex;
   align-items: center;
   flex: 1 10 65%;
-  margin-left: 12px;
+  margin-left: 0.75rem;
 }
 
+/* media */
+@media screen and (max-width: 786px) {
+  .margin-block-top {
+    margin-top: 0px;
+  }
+
+  .org-decor__fon {
+    width: 100%;
+    height: 36.625rem;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .org-decor__element {
+    position: static;
+    width: 80%;
+  }
+  
+
+  .element__item-revers {
+    flex-direction: row; 
+  }
+
+  .element__text.element__text__align-right {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+}
+/* 480 */
+
+@media screen and (max-width: 480px) {
+  .org-decor__element {
+    position: static;
+    width: 100%;
+  }
+}

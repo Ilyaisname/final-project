@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/style/normalize.css">
   <link rel="stylesheet" href="src/style/main.css">
   <link rel="stylesheet" href="src/style/first-block.css">
@@ -13,6 +14,8 @@
   <link rel="stylesheet" href="src/style/five-block.css">
   <link rel="stylesheet" href="src/style/six-block.css">
   <link rel="stylesheet" href="src/style/form-block.css">
+  <link rel="stylesheet" href="src/style/footer.css">
+  <link rel="stylesheet" href="css/fontello.css">
   <title>Проводник</title>
 </head>
 <body>
@@ -20,19 +23,24 @@
     
     <div class="container">
       <div class="first-block-fon">
-        <div class="rings"><img src="images/rings.png" alt="rings"></div>
+        <div class="rings"></div>
         <div class="mishen"><img src="images/mishen_red.png" alt="mishen_red"></div>
-        <div class="girls"><img src="images/devushka.png" alt="girls"></div>
+        <div class="girls"></div>
       </div>
       <header class="header">
-        <div class="row">
+        <div class="header__container row">
           <div class="header__logo col col-12 col-md-2">
             <a href="#">Проводник</a>
+            
+            <div id="burger_menu" class="header__burger">
+              <span class="burger"></span>
+            </div>
           </div>
 
-          <div class="col col-md-10">
-            <nav class="header__navigation ">  
-              <ul class="header__navigation-menu">
+
+          <div id="header_menu" class="header__nav col col-12 col-md-10">
+            <nav class="header__navigation">  
+              <ul class="header__navigation-menu col-col-12">
                   <li class="header__navigation-links"><a class="links" href="">услуги</a></li>
                   <li class="header__navigation-links"><a class="links" href="">цены</a></li>
                   <li class="header__navigation-links"><a class="links" href="">как это работает</a></li>
@@ -44,22 +52,20 @@
               </ul>
             </nav>
 
-            <div class="header__burger">
-              <span></span>
-            </div>
+            
           </div>
        </div>
             <div class="header__contacts row">
                   <div class="contacts col col-12 col-lg-8">
                     <div class="contacts__address col col-12 col-md-4 col-lg-4">
-                        <span></span> 
-                        <span class="address">г. Москва, ул. Ленинская Слобода, 19 с. 1</span> 
+                        <span class="address-icon"><i class="demo-icon icon-header-strelka"></i></span> 
+                        <div class="address">г. Москва, ул. Ленинская Слобода, 19 с. 1</div> 
                     </div>
                     <div class="contacts__phone col col-12 col-md-4 col-lg-4">
-                        <span></span>
+                        <span class="phone-icon"><i class="demo-icon icon-phone"></i></span>
                         <div class="phone-wrap__container ">
-                          <div class="phone-wrap__phone"><a href="#">8(123) 123-12-88</a></div>
-                          <div class="phone-wrap__mail"><a href="#">info@provodnik.ru</a></div>
+                          <div class="phone-wrap__phone"><a href="tel:81231231288">8(123) 123-12-88</a></div>
+                          <div class="phone-wrap__mail"><a href="mailto:info@provodnik.ru">info@provodnik.ru</a></div>
                         </div>
                     </div>
                     <div class="contacts__button col col-12 col-md-4 col-lg-4">
@@ -72,14 +78,14 @@
           
         
       </header>
-      <section class="ali-logo row">
+      <article class="ali-logo row">
         <div class="col col-md-5">
-          <div class="ali-logo__before">зайди на</div>
+          <h2 class="ali-logo__before">зайди на</h2>
           <div class="ali-logo__logo"><img src="images/aliexpress_logo.png" alt="logo"></div>
-          <div class="ali-logo__text">Лучшее решение для небольших интернет-магазинов и производителей</div>
-          <div class="ali-logo__button"><a class="button button-size-md" href="#">Хочу на AliExpress</a></div>
+          <p class="ali-logo__text">Лучшее решение для небольших интернет-магазинов и производителей</p>
+          <div class="ali-logo__button"><a class="button button-size-md" href="https://aliexpress.ru">Хочу на AliExpress</a></div>
         </div>
-      </section>
+      </article>
     </div>
 
   </div>
@@ -101,7 +107,7 @@
           </section>
 
           <section class="card__right col col-12 col-md-5">
-            <span class="card__right-header">Точнее, их два.</span>
+            <h3 class="card__right-header">Точнее, их два.</h3>
             <div class="card__right-item">
               <div class="item__decor">
               </div>
@@ -123,45 +129,45 @@
     <div class="container-wrap fon-purple">
       <div class="container">
         <div class="decor-part">
-          <div class="circles"><img src="images/circles-bl2.png" alt="circles"></div>
+          <div class="circles"></div>
           <div class="hand-phone"><img src="images/hand-bl2.png" alt="hand-phone"></div>
         </div>
         <section class="sentence">
-          <div class="row">
-            <div class="header-section col col-12 col-lg-5">
+          <div class="sentence__header row">
+            <h2 class="header-section col col-12 col-lg-5">
               <span>Что вы получите с магазином на AliExpress?</span>
-            </div>
+            </h2>
           </div>
-          <div class="product-sentence row">
-            <div class="product-sentence__card col col-12 col-md-4">
+          <article class="product-sentence row">
+            <div class="product-sentence__card col col-12 col-md-6 col-lg-4">
               <div class="card-wraper">
-                <span class="card__icon"></span>
+                <span class="card__icon"><i class="demo-icon icon-calc"></i></span>
                 <span class="card__text">Снизите операционные расходы и расходы на маркетинг.</span>
               </div>
             </div>
-            <div class="product-sentence__card col col-12 col-md-4">
+            <div class="product-sentence__card col col-12 col-md-6 col-lg-4">
               <div class="card-wraper">
-                <span class="card__icon"></span>
-                <span class="card__text">Сможете реализовывать продукцию в очень больших объемах.</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-sentence end row">
-            <div class="product-sentence__card col col-12 col-md-4">
-              <div class="card-wraper">
-                <span class="card__icon"></span>
+                <span class="card__icon"><i class="demo-icon icon-graf"></i></span>
                 <span class="card__text">Трафик из очень активных покупателей из регионов.</span>
               </div>
             </div>
-            <div class="product-sentence__card col col-12 col-md-4">
+          </article>
+          <article class="product-sentence end row">
+            <div class="product-sentence__card col col-12 col-md-6 col-lg-4">
               <div class="card-wraper">
-                <span class="card__icon"></span>
+                <span class="card__icon"><i class="demo-icon icon-plainer"></i></span>
+                <span class="card__text">Сможете реализовывать продукцию в очень больших объемах.</span>
+              </div>
+            </div>
+            <div class="product-sentence__card col col-12 col-md-6 col-lg-4">
+              <div class="card-wraper">
+                <span class="card__icon"><i class="demo-icon icon-rub"></i></span>
                 <span class="card__text">В 2020 году еще увеличите продажи за счет покупателей из стран СНГ.</span>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col col-4">
+          </article>
+          <div class="sentence__footer row">
+            <div class="sentence__btn col col-12 col-md-6 col-lg-4">
               <a href="#" class="button button-size-md but-clr-orange">Скачать предложение</a>
             </div>
           </div>
@@ -171,21 +177,21 @@
   </div>
     <div id="third-block">
       <div class="container container-wrap">
-        <section>
-          <div class="exit-in-ali row">
-            <div class="header-section header-section__clr-black col col-9">
+        <section class="exit-in-ali">
+          <div class="exit-in-ali__header row">
+            <h2 class="header-section header-section_clr-black col col-12">
               <span>Почему выходить на AliExpress самостоятельно сложно?</span>
-            </div>  
+            </h2>  
           </div>
 
           <div class="exit-in-ali__group row">
             <div class="group__wrap col col-12">
-              <div class="row">
-                <div class="group__left col col-12 col-lg-6">
+              <div class="group__container row">
+                <article class="group__left col col-12 col-lg-6">
                   <div class="group__list-wrap row">
-                    <div class="group__list col col-10">
-                      <span class="group__title">Самостоятельно</span>
-                      <ul class="list">
+                    <div class="group__list list col col-10">
+                      <h3 class="group__title">Самостоятельно</h3>
+                      <ul class="list__items">
                         <li class="list__item">Китайская площадка со сложными правилами и формулами.</li>
                         <li class="list__item">Ограниченные возможности без статуса технического партнера.</li>
                         <li class="list__item">Очень тяжело добиться высокого рейтинга магазинов и товаров – <b>главного фактора в выдаче по запросу.</b></li>
@@ -194,11 +200,11 @@
                     <div class="group__pic col col-11">
                     </div>
                   </div>
-                </div>
-                <div class="group__right col col-12 col-lg-6">
+                </article>
+                <article class="group__right col col-12 col-lg-6">
                   <div class="group__right-wrap row">
-                    <div class="col col-11">
-                      <span class="group__title group__title__size-md">С техническим партнером Content Hub</span>
+                    <div class="group__container col col-11">
+                      <h3 class="group__title group__title_size-md">С техническим партнером Content Hub</h3>
                         <div class="content-hub">
                           <div class="content-hub__item">Берем заключение договора на себя.</div>
                           <div class="content-hub__item">Помогаем с описанием товаров.</div>
@@ -209,12 +215,12 @@
                         <div class="content-hub__text">
                           <span>И главное — продвигаем в рейтинге на первые позиции в выдаче.</span>
                         </div>
-                        <div class="content-hub__but">
+                        <div class="content-hub__butn">
                           <a href="#" class="button button-size-lg">Написать нам</a>
                         </div>  
                       </div>  
                   </div>
-                </div>
+                </article>
               </div>
             </div>
           </div>
@@ -235,7 +241,7 @@
                     <span class="ali-footer__text">С ограниченными ресурсами и бюджетом на рекламу.</span>
                 </div>
 
-                <div class="ali-footer__item col col-12 col-lg-6">
+                <div class="ali-footer__item zavod_icon col col-12 col-lg-6">
                   <span class="ali-footer__header">Небольшим производителям</span>
                   <span class="ali-footer__text">Готовы поставлять товар реселлеру и не хотят заниматься продвижением товаров конечному покупателю.</span>
                 </div>
@@ -250,9 +256,9 @@
     <div id="fourth-block" class="margin-block-top container-wrap fon-grey">
         <section class="process-org container">
           <div class="process-org__header row">
-              <div class="header-section header-section__clr-black col col-12 col-lg-5">
+              <h2 class="header-section header-section_clr-black col col-12 col-lg-5">
                   <span>Как организован процесс?</span>
-              </div>
+              </h2>
           </div>
 
           <div class="process-org__content org-decor row">
@@ -265,9 +271,9 @@
                       <span class="element__circle">
                         1
                       </span>
-                      <span class="element__text element__text__align-right">
+                      <h3 class="element__text element__text__align-right">
                         Проводник ищет магазины и производителей и заводит их на маркетплейс.
-                      </span>
+                      </h3>
                     </div>
                   </div>
 
@@ -276,9 +282,9 @@
                       <span class="element__circle">
                         2
                       </span>
-                      <span class="element__text element__text__align-right">
+                      <h3 class="element__text element__text__align-right">
                         Представляет интересы мерчантов и коммуницирует с площадкой по всем установочным вопросам.
-                      </span>
+                      </h3>
                     </div>
                   </div>
 
@@ -287,9 +293,9 @@
                       <div class="element__circle">
                         3
                       </div>
-                      <span class="element__text">
+                      <h3 class="element__text">
                         Ищет партнеров-реселлеров при необходимости и помогает наладить взаимодействие.
-                      </span>
+                      </h3>
                     </div>
                   </div>
 
@@ -298,9 +304,9 @@
                       <span class="element__circle">
                         4
                       </span>
-                      <span class="element__text">
+                      <h3 class="element__text">
                         Уже освоил алгоритм продвижения магазина и готов его применить для вашей раскрутки на маркетплейсе.
-                      </span>
+                      </h3>
                     </div>
                   </div> 
 
@@ -313,54 +319,54 @@
     </div>
 
     <div id="five-block" class="container-wrap">
-      <div class="slider container">
+      <section class="slider container">
         <!-- decor package -->
         <div class="slider__decor"></div>
         <!-- //  -->
         <div class="slider__header slider__header-mb row">
-          <div class="header-section header-section__clr-black col col-12 col-lg-5">
+          <h2 class="header-section header-section_clr-black col col-12 col-lg-5">
             <span>Чего добились с Проводником другие магазины?</span>
-          </div>
+          </h2>
         </div>
 
-        <div class="slider__slide slide row">
-          <div class="slide__image col col-3">
+        <article class="slider__slide slide row">
+          <div class="slide__image col col-12 col-md-3">
             <span class="slide__logo"><img src="images/h_m-bl-5.png" alt="h_m-logo"></span>
           </div>
-          <div class="slide__content col col-9">
+          <div class="slide__content col col-12 col-md-9">
             <div class="row">
-            <div class="slide__header col col-11">
-              <span>Продвижение и раскрутка магазина одежды</span>
-            </div>
-            <div class="slide__text col col-11">
-              <span>Проводник ищет магазины и производителей и заводит их на маркетплейс. Уже освоил алгоритм продвижения магазина и готов его применить для вашей раскрутки на маркетплейсе.</span>
-            </div>
+              <h3 class="slide__header col col-12 col-md-11">
+                <span>Продвижение и раскрутка магазина одежды</span>
+              </h3>
+              <div class="slide__text col-12 col-md-11">
+                <span>Проводник ищет магазины и производителей и заводит их на маркетплейс. Уже освоил алгоритм продвижения магазина и готов его применить для вашей раскрутки на маркетплейсе.</span>
+              </div>
 
-            <div class="slide__figures figures col col-11">
-              <div class="figures__wrap col col-6">
-                <div class="figures__item1">765 885</div>
-                <div class="figures__item2">Законченных покупок</div>
-              </div>
-              <div class="figures__wrap col col-6">
-                <div class="figures__item1">789 654</div>
-                <div class="figures__item2">Просмотров магазина</div>
+              <div class="slide__figures figures col col-12 col-md-11">
+                <div class="figures__wrap col-10 col-md-6">
+                  <div class="figures__item1">765 885</div>
+                  <div class="figures__item2">Законченных покупок</div>
+                </div>
+                <div class="figures__wrap col-10 col-md-6">
+                  <div class="figures__item1">789 654</div>
+                  <div class="figures__item2">Просмотров магазина</div>
+                </div>
               </div>
             </div>
-          </div>
           </div> 
-        </div>
+        </article>
 
-        <div class="slider__control row">
+        <aside class="slider__control row">
           <div class="slider__elements col col-12">
-            <div class="slider__items col col-2">
+            <div class="slider__items col col-12">
               <span class="slider__item"></span>
               <span class="slider__item slider__item-active"></span>
               <span class="slider__item"></span>
               <span class="slider__item"></span>
             </div>
           </div>
-        </div>
-      </div>
+        </aside>
+      </section>
     </div>
 
     <div id="six-block" class="container-wrap fon-purple2">
@@ -406,13 +412,13 @@
             <div class="form__decor"></div>
             <div class="form__vector"></div>
             <div class="form__header row">
-              <div class="header-section header-section__clr-black header-section_center header-section_padding col col-11">
+              <div class="header-section header-section_clr-black header-section_center header-section_padding col col-11">
                 <span>Пожалуйста, оставьте свои контакты</span>
               </div>
             </div>
 
             <div class="form__content row">
-              <div class="form__left col col-5">
+              <div class="form__left col col-10 col-md-5">
                 <!-- elements left -->
                 <div class="form__name">
                   <label class="label-title" for="name">Имя</label> 
@@ -430,7 +436,7 @@
                 </div>
               </div>
 
-              <div class="form__right col col-5">
+              <div class="form__right col col-10 col-md-5">
                 <!-- elements right -->
                 <div class="form__why">
                   <label class="label-title" for="select">Кто вы</label>
@@ -450,10 +456,10 @@
 
               <div class="form__footer col col-10">
                 <div class="form__footer-wrap row">
-                <div class="form__footer-text col col-6">
+                <div class="form__footer-text col col-10 col-md-6">
                   Оправляя форму, вы соглашаетесь на сбор, обработку и хранение ваших данных сотрудниками компании. Политика конфиденциальности
                 </div>
-                <div class="form__butn col col-6"><button type="submit" class="button button-size-md flex-end">отправить</button></div>
+                <div class="form__butn col col-10 col-md-6"><button type="submit" class="button button-size-md flex-end">отправить</button></div>
                 </div>
               </div>
             </div>
@@ -461,5 +467,64 @@
         </div>
       </div>
     </div>
+
+    <div id="footer" class="container-wrap">
+      <div class="footer container">
+        <footer class="footer__header header">
+          <div class="header">
+            <div class="header__container row">
+              <div class="header__logo col col-12 col-md-2">
+                <a href="#">Проводник</a>
+              </div>
+    
+              <div class="footer__nav col col-md-10">
+                <nav class="header__navigation">  
+                  <ul class="header__navigation-menu">
+                      <li class="header__navigation-links"><a class="links" href="">услуги</a></li>
+                      <li class="header__navigation-links"><a class="links" href="">цены</a></li>
+                      <li class="header__navigation-links"><a class="links" href="">как это работает</a></li>
+                      <li class="header__navigation-links"><a class="links" href="">блог</a></li>
+                      <li class="header__navigation-links"><a class="links" href="">о компании</a></li>
+                      <li class="header__navigation-links"><a class="links" href="">производителям</a></li>
+                      <li class="header__navigation-links"><a class="links" href="">проекты</a></li>
+                      <li class="header__navigation-links"><a class="links" href=""> контакты</a></li>
+                  </ul>
+                </nav>
+              </div> 
+            </div> 
+              <div class="header__contacts footer_contacts row">
+                  <div class="contacts__copirait col col-4 col-md-4 col-lg-3">
+                    <div class="copirait__icon">&COPY;</div> 
+                    <div class="copirait">2018.<br> Все права защищены.</div> 
+                  </div>
+
+                  <div class="contacts__address footer_address col col-4 col-md-4 col-lg-3">
+                    <span class="address-icon"><i class="demo-icon icon-header-strelka"></i></span> 
+                    <div class="address">г. Москва, ул. Ленинская Слобода, 19 с. 1</div> 
+                  </div>
+
+                  <div class="contacts__phone footer_phone col col-4 col-md-4 col-lg-3">
+                    <span class="phone-icon"><i class="demo-icon icon-phone"></i></span>
+                      <div class="phone-wrap__container ">
+                        <div class="phone-wrap__phone"><a href="#">8(123) 123-12-88</a></div>
+                        <div class="phone-wrap__mail"><a href="#">info@provodnik.ru</a></div>
+                      </div>
+                      <span class="fb-icon"><i class="demo-icon icon-fb-icon"></i></span>
+                  </div>
+                  
+                  <div class="contacts__button footer_button col col-12 col-md-12 col-lg-3">
+                    
+                    <div class="button-wrap">
+                      <a class="button" href="#">Обратный звонок </a>
+                    </div>
+                  </div>
+                  
+              </div>
+            
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./src/main.js"></script>
 </body>
 </html>

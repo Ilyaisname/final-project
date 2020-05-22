@@ -1,23 +1,42 @@
 .slider__decor {
   position: absolute;
   top: 0;
-  right: 60px;
-  width: 412px;
-  height: 478px;
+  right: 3.75rem;
+  width: 25.75rem;
+  height: 29.875rem;
   background: url(./../../images/paket_mish-bl-5.png) center center / cover no-repeat;
 }
 
 .slider__header-mb {
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 }
 
 .slider__slide {
   position: relative;
   background: #FFFFFF;
   border: 1px solid rgba(229, 229, 229, 0.6);
-  /* box-sizing: border-box; */
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(0, 0, 0, 0.14);
   z-index: 1;
+}
+
+.slider__slide::before {
+  content: "Кейс";
+  top: -1.25rem;
+  left: 2.125rem;
+  position: absolute;
+  width: 6.0625rem;
+  height: 2.5rem;
+  background: url(./../../images/slider_title-bl-6.png) center center no-repeat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide__content {
@@ -30,23 +49,21 @@
 
 
 .slide__header {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
   color: #000000;
-  padding-bottom: 26px;
+  padding-bottom: 1.625rem;
 }
 
 .slide__text {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #000000;
-  padding-bottom: 66px;
+  padding-bottom: 4.125rem;
 }
 
 .slide__figures {
@@ -55,8 +72,7 @@
 
 .figures__wrap {
   display: flex;
-  /* width: 374px; */
-  padding-left: 35px;
+  padding-left: 2.1875rem;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -64,20 +80,19 @@
 
 .figures__wrap::before {
   content: "";
-  top: 10px;
-  left: -10px;
-  width: 34px;
-  height: 34px;
+  top: 0.625rem;
+  left: -0.625rem;
+  width: 2.125rem;
+  height: 2.125rem;
   background: url(./../../images/Group-bl-5.png) center center no-repeat;
   position: absolute;
 }
 
 .figures__item1 {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 3rem;
+  line-height: 3.5rem;
   color: #000000;
   flex: 1 1 50%;
 }
@@ -86,8 +101,8 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   color: #000000;
   flex: 1 10 30%;
 }
@@ -102,15 +117,11 @@
   align-items: center;
 }
 
-.slider__control {
-
-}
-
 .slider__elements {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 45px 0;
+  padding: 2.8125rem 0;
 }
 
 .slider__items {
@@ -121,14 +132,61 @@
 
 .slider__item {
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 12px;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.75rem;
   background-color: #000000;
   border-radius: 50%;
+}
+
+.slider__item:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: .4s;
 }
 
 .slider__item-active {
   background-color: #FDBF0F;
   transform: scale(1.7);
+}
+
+@media screen and (max-width: 786px) {
+  .slider__decor {
+    display: none;
+  }
+
+  .figures__item1 {
+    font-size: 1.4375rem;
+  }
+
+  .figures__wrap::before {
+    top: 0.875rem;
+    left: -0.625rem;
+    width: 1.625rem;
+    height: 1.625rem;
+    background: url(./../../images/Group-bl-5.png) center center / cover no-repeat;
+  }
+
+  .slider__header-mb {
+    margin-bottom: 0px;
+  }
+
+  .slide__image {
+    padding: 1.875rem 0;
+  }
+
+  .slide__content {
+    padding: 0;
+  }
+
+  .slide__text {
+    padding-bottom: 1.875rem;
+    margin: 0 auto;
+  }
+
+  .slide__figures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

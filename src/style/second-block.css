@@ -6,7 +6,7 @@
 
 /* content */
 .card {
-  padding-top: 102px;
+  padding-top: 6.375rem;
 }
 
 .card-wrap {
@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: flex-end;
   border-right: 2px solid black;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 1.25rem;
 }
 
 .card__left-pic img {
@@ -29,30 +29,28 @@
 .card__left::before {
   content: "Ситуация";
   position: absolute;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   text-align: center;
   color: #FFFFFF;
-  padding: 10px 25px;
+  padding: 0.625rem 1.5625rem;
   background: url(./../../images/border_title.png);
-  top: 20px;
-  left: -10px;
+  top: 1.25rem;
+  left: -0.625rem;
   align-self: flex-start;
 }
 
 .card__left-text {
   align-self: center;
-  padding-top: 54px;
-  width: 396px;
+  padding-top: 3.375rem;
+  width: 24.75rem;
   max-width: 100%;
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .card__right {
@@ -66,52 +64,50 @@
 .card__right::before {
   content: "Решение";
   position: absolute;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   text-align: center;
   color: #FFFFFF;
-  padding: 10px 27.5px;
+  padding: 0.625rem 1.71875rem;
   background: url(./../../images/border_title.png);
-  top: 20px;
+  top: 1.25rem;
   left: 0px;
   align-self: flex-start;
 }
 
 .card__right-header {
-  font-family:"Roboto",sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
-  padding-top: 86px;
-  padding-right: 32px;
-  padding-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  padding-top: 5.375rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
 }
 
 .card__right-item {
   display: flex;
   width: 100%;
-  max-width: 476px;
+  max-width: 29.75rem;
   justify-content: space-between;
-  padding-right: 10px;
-  padding-bottom: 80px;
+  padding-right: 0.625rem;
+  padding-bottom: 5rem;
 }
 
 .item__decor span {
   font-family: "Roboto Condensed",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 144px;
-  line-height: 169px;
+  font-size: 9rem;
+  line-height: 10.5625rem;
   color: #000000;
 }
 
 .item__decor {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   background: url(./../../images/krug-bl2.png);
   position: relative;
 }
@@ -120,16 +116,15 @@
   content: "№";
   position: absolute;
   left: 0px;
-  top: 22px;
+  top: 1.375rem;
   background: #000000;
   border-radius: 50%;
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   text-align: center;
-  padding: 5px 6px;
+  padding: 0.3125rem 0.375rem;
   color: #FFFFFF;
 }
 
@@ -139,11 +134,11 @@
   font-family: "Roboto Condensed",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 144px;
-  line-height: 169px;
+  font-size: 9rem;
+  line-height: 10.5626rem;
   color: #000000;
-  top: -30px;
-  right: -8px;
+  top: -1.875rem;
+  right: -0.5rem;
 }
 
 .item__decor.two::after {
@@ -151,30 +146,19 @@
 }
 
 .item__text {
-  width: 302px;
-  font-family: "Roboto",sans-serif;
+  width: 18.875rem;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   color: #000000;
 }
 
-@media screen and (max-width: 768px) {
-  .card__left {
-    flex-direction: column;
-    align-items: center;
-    border-right: none;
-    margin: 0 0 0 10px;
-  }
-  
-  .card__left::before {
-    left: 0px;
-  }
 
-}
+
+
 /* ---- */
 /* bottom part */
 .fon-purple {
@@ -183,43 +167,46 @@
 
 .circles {
   position: absolute;
-  top: 52px;
-  right: -216px;
+  bottom: -3.5rem;
+  right: -13.5rem;
+  width: 48.8125rem;
+  height: 48.8125rem;
+  background: url(./../../images/circles-bl2.png)center center no-repeat ;
 }
 
 .hand-phone {
   position: absolute;
-  top: 114px;
-  right: -38px;
+  bottom: -0.25rem;
+  right: -2.375rem;
 }
 
 .header-section {
-  padding-top: 70px;
-  padding-bottom: 76px;
+  padding-top: 4.375rem;
+  padding-bottom: 4.75rem;
   color: #FFFFFF;
   font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 2rem;
+  line-height: 2.625rem;
 }
 
 .sentence {
   position: relative;
   z-index: 1;
-  padding-bottom: 86px;
+  padding-bottom: 5.375rem;
 }
 
 .end {
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 
 .product-sentence__card {
-  padding-bottom: 48px;
+  padding-bottom: 3rem;
 }
 
-.card-wraper {
-  height: 120px;
+.card-wraper { 
+  height: 7.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,26 +215,74 @@
 }
 
 .card__icon {
-
+  color: #651FFF;
+  font-size: 150%;
+  flex: 0 2 26%;
+  padding-left: 1.875rem;
+  display: block;
 }
 
 .card__text {
   font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   color: #000000;
+  flex: 1 1 70%;
+  padding-right: 1.875rem;
 }
 
 .but-clr-orange {
   background: #FF5900;
   box-shadow: 0px 16px 32px rgba(69, 90, 100, 0.4);
-  border-radius: 6px;
+  border-radius: 0.375rem;
 }
 
 .button.button-size-md.but-clr-orange::after {
   border-left-color: #FF5900;
+}
+
+@media screen and (max-width: 768px) {
+  .card__left {
+    flex-direction: column;
+    align-items: center;
+    border-right: none;
+    margin: 0 0 0 0.625rem;
+  }
+  
+  .card__left::before {
+    left: 0px;
+  }
+
+  .header-section.col {
+    padding: 2.5rem 0;
+    text-align: center;
+  }
+
+  .hand-phone {
+    display: none;
+  }
+
+  .card {
+    padding-top: 2.5rem;
+  }
+
+  .card__right-item {
+    padding-bottom: 2.5rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .product-sentence__card.col {
+    padding-bottom: 1.25rem;
+  }
+
+  .sentence {
+    padding-bottom: 0px;
+  }
+
 }

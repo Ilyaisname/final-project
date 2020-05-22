@@ -15,29 +15,25 @@
   position: relative;
 }
 
-/* .margin_left {
-  padding-left: 12px;
-} */
-
 .arrow {
   position: relative;
 }
 
 .element__circle.arrow::before {
   content: "";
-  top: 22px;
-  right: 100px;
-  width: 54px;
-  height: 15px;
+  top: 1.375rem;
+  right: 6.25rem;
+  width: 3.375rem;
+  height: 0.9375rem;
   position: absolute;
   background: url(./../../images/arrow-bl-6.png) center center / cover no-repeat;
 }
 
 .start__arrow-to-form {
   background: url(./../../images/Vector-bl-6.png) center center  no-repeat;
-  width: 166px; 
-  height: 78px;
-  margin-top: 9px;
+  width: 10.375rem; 
+  height: 4.875rem;
+  margin-top: 0.5625rem;
   display: block;
 }
 
@@ -47,14 +43,15 @@
   }
 
   .start__element {
-    margin-top: 60px;
+    margin-bottom: 1.25rem;
   }
 
   .element__circle.arrow::before {
-    transform: rotate(90deg);
-    top: -36px;
-    right: 46px;
-    width: 54px;
-    height: 15px;
+    display: none;
   }
+
+  .start__arrow-to-form {
+    display: none;
+  }
+
 }

@@ -1,0 +1,68 @@
+.contacts__copirait {
+  display: flex;
+  align-items: center;
+}
+
+.copirait {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #000000;
+  width: 60%;
+}
+
+.copirait__icon {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.625rem;
+  line-height: 1.9375rem;
+  align-self: start;
+  color: #000000;
+  padding-right: 1.25rem;
+}
+
+.footer__header {
+  padding-bottom: 3.875rem;
+}
+
+.footer_address {
+  justify-content: flex-start;
+}
+
+.footer_phone {
+  justify-content: flex-start;
+  position: relative;
+}
+
+.fb-icon {
+  position: absolute;
+  top: 0.9375rem;
+  right: -3.5rem;
+  font-size: 130%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_phone,
+  .footer_address,
+  .footer_button {
+    justify-content: center;
+  }
+
+  .fb-icon {
+    left: -27.5rem;
+    position: relative;
+    top: 5.8125rem;
+    left: -0.625rem;
+    font-size: 173%;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+}

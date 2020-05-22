@@ -4,8 +4,8 @@
 }
 
 .form__decor {
-  width: 318px;
-  height: 313px;
+  width: 19.875rem;
+  height: 19.5625rem;
   background: url(./../../images/krug-form-bl-7.png) center center / cover no-repeat;
   position: absolute;
   top: 0;
@@ -14,10 +14,10 @@
 }
 
 .form__vector {
-  width: 100px;
-  height: 219px;
-  top: -140px;
-  left: -64px;
+  width: 6.25rem;
+  height: 13.6875rem;
+  top: -8.75rem;
+  left: -4rem;
   position: absolute;
   background: url(./../../images/Vector-form-bl-7.png) center center / cover no-repeat;
 }
@@ -25,8 +25,8 @@
 /*  */
 
 .form__body {
-  margin-top: 116px;
-  margin-bottom: 102px;
+  margin-top: 7.25rem;
+  margin-bottom: 6.375rem;
   justify-content: center;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .header-section_padding {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 .form__container {
@@ -53,7 +53,7 @@
 .form__content {
   position: relative;
   justify-content: center;
-  padding-bottom: 42px;
+  padding-bottom: 2.625rem;
 }
 
 .form__left {
@@ -80,29 +80,27 @@
 .form__why,
 .form__name,
 .form__tel {
-  padding-bottom: 26px;
+  padding-bottom: 1.625rem;
 }
 
 .input-select {
-  padding-top: 3px;
+  padding-top: 0.1875rem;
 }
 
 .label-title {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
   color: rgba(0, 0, 0, 0.54);
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 
 .input-text {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: rgba(0, 0, 0, 0.9);
   border: none;
   border-bottom: 1px solid #979797;
@@ -114,20 +112,27 @@
 }
 
 .form__footer {
-  padding-top: 34px;
+  padding-top: 2.125rem;
 }
 
 .form__footer-text {
-  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   color: rgba(0, 0, 0, 0.8);
 }
 
 .form__butn {
   display: flex;
   justify-content: flex-end;
-  padding-right: 15px;
+  padding-right: 0.9375rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .form__butn {
+    justify-content: center;
+    padding-right: 0px;
+  }
 }
